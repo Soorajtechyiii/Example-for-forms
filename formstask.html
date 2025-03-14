@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .form-container{
+        width: 80%;
+        margin: auto;
+    }
+    .form-group{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .form-group label{
+        width: 180px;
+        text-align: right;
+        margin-right: 10px;
+    }
+    .form-group input{
+        flex: 1;
+        padding: 5px;
+    }
+    .form-group .radio-group{
+        display: flex;
+        gap: 10px;
+    }
+    .submit-btn{
+        display: flex;
+        justify-content: center;
+    }
+fieldset{
+    font-size: 20px;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    align-items: center;
+    background-color: burlywood;
+    font-style: oblique;
+}
+.button{
+    font-size: 30px;
+    width: 25%;
+    height: 20%;
+}
+.button:hover{
+    background-color: rgb(25, 250, 25);
+}
+</style>
+<body>
+    <form>
+        <fieldset>
+        <legend>User Personl Information</legend>
+        <div class="form-group">
+        <label for="name">Enter your Full name:</label>
+        <input type="text" id="name" name="name" required />
+        </div><br>
+        <div class="form-group">
+        <label for="email">Enter your Email:</label>
+        <input type="email" id="email" name="email" required />
+        </div><br>
+        <div class="form-group">
+        <label for="password">Enter your password:</label>
+        <input type="password" id="password" name="pass" required />
+        </div><br>
+        <div class="form-group">
+        <label for="ConfirmPassword">Confirm your password:</label>
+        <input type="password" id="ConfirmPassword" name="ConfirmPassword" required/>
+        </div><br>
+        <div class="form-group">
+        <label>Enter your gender</label>
+        <div class="gender-group">
+            <input type="radio" name="gender" value="male" id="male" required/>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="male" id="male" required/>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="others" id="others"/>
+            <label for="others">Others</label></div>
+        </div>
+        <div class="form-group">
+        <label for="dob">Enter your date of birth</label>
+        <input type="date" id="dob" name="dob" required /><br>
+        </div>
+        <div class="form-group">
+        <label for="Address">Enter your Address</label>
+        <textarea id="address" name="address" required></textarea><br>
+        </div>
+        <input type="submit" class="button" value="SUBMIT"/>
+        </fieldset>
+    </form>
+</body>
+</html>
